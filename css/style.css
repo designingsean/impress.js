@@ -1,0 +1,110 @@
+html { overflow: hidden; }
+body { font-family: 'Open Sans', sans-serif; line-height: .8; font-size: 45px; }
+
+.background {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: -moz-radial-gradient(50% 50%, farthest-side, #fff, #efefef);
+	background: -webkit-gradient(radial, 50% 50%, 250, 50% 50%, 750, from(#fff), to(#efefef));
+	z-index: 0;
+    opacity: 1;
+}
+
+#hint {
+    z-index: 9999;
+    position: fixed; top: 0; left: 20px;
+    font-size: 16px;
+    background: #ddd;
+    color: #666;
+    padding: 6px 12px 12px;
+    font-style: italic;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    
+    -webkit-transition: opacity 2s;
+    -moz-transition:    opacity 2s;
+    -ms-transition:     opacity 2s;
+    -o-transition:      opacity 2s;
+    transition:         opacity 2s;
+    
+    -webkit-transition-delay: 6s;
+    -moz-transition-delay: 6s;
+    -ms-transition-delay: 6s;
+    -o-transition-delay: 6s;
+    transition-delay: 6s;
+}
+
+.img-wrap {	margin: 0 auto; }
+.img-inline { display: inline-block; padding: 12px 3px; }
+.img-link {	text-decoration: none; }
+.img-border { border: solid 1px #aaa; }
+
+
+/* COMMON STEP STYLES */
+
+.step {
+    text-align: center;
+    width: 1000px;
+    padding: 20px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+    
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+    
+    text-shadow: rgba(0,0,0,.01) 0 0 1px; /* Chrome @font-face anti-aliasing fix */
+}
+
+.step:not(.active) { opacity: 0.3; }
+
+
+/* STEP SPECIFIC STYLES */
+#title div { font-size:192px; font-weight:800; }
+#overview div { font-size:158px; font-weight:600; }
+#background div { font-size:64px; font-weight:600; }
+#background div:last-child { font-size:62px; font-weight:400; }
+#features div { font-size:81px; font-weight:400; }
+#features div:last-child { font-size:66px; font-weight:300; }
+#example1 img { border: 1px solid #333; }
+#example1 div { font-size:36px; font-weight:400; margin-top: 20px; }
+#example2 img { border: 1px solid #333; }
+#example2 div { font-size:36px; font-weight:400; margin-top: 20px; }
+#example3 img { border: 1px solid #333; }
+#example3 div { font-size:36px; font-weight:400; margin-top: 20px; }
+#reason div { font-size:76px; font-weight:400; }
+#reason div:last-child { font-size:76px; font-weight:400; }
+#answer div { font-size:192px; font-weight:400; }
+#inaction img {}
+#others {}
+#related {}
+#duplicate div { font-size:56px; font-weight:400; }
+#mistakes div { font-size:56px; font-weight:400; }
+#hard div { font-size:76px; font-weight:800; }
+#slow div { font-size:76px; font-weight:800; }
+#inaction2 img {}
+#complete {}
+#consistent div { font-size:81px; font-weight:400; }
+#auto div { font-size:97px; font-weight:600; }
+#simple div { font-size:168px; font-weight:700; }
+#fast div { font-size:330px; font-weight:800; }
+#sharepoint div { font-size:71px; font-weight:400; }
+#sharepoint div:last-child { font-size:67px; font-weight:600; }
+#documents div { font-size:158px; font-weight:400; }
+#documents div:last-child { font-size:124px; font-weight:400; }
+#collaboration div { font-size:114px; font-weight:700; }
+#plan div { font-size:55px; font-weight:800; }
+#plan div:last-child { font-size:137px; font-weight:300; }
+#digcoast div:first-child { font-size:128px; font-weight:600; }
+#digcoast div { font-size:114px; font-weight:800; }
+#digcoast div:last-child { font-size:170px; font-weight:700; }
+#nextsteps div:first-child { font-size:120px; font-weight:400; }
+#nextsteps div { font-size:96px; font-weight:400; }
+#nextsteps div:last-child { font-size:154x; font-weight:800; }
